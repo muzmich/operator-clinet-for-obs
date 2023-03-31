@@ -1,8 +1,8 @@
 import express from "express";
+import { TwitchIntegration } from './twitchIntegration';
 
 export class Server {
   private app: ReturnType<typeof express>;
-
   constructor(private port = 3000) {
     this.init(port);
   }
